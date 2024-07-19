@@ -1,0 +1,714 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  :root{
+  --color-blue:rgb(98, 104, 232);
+  --color-black:rgb(42, 50, 67);
+  --color-white:white;
+  }
+  .menu_bar{
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1920px;
+  height: 95px;
+  left: 0%;
+  right: 0%;
+  top: 0%;
+  bottom: 0%;
+  background-color: var(--color-white);
+  margin: 0 auto;
+  z-index: 1000;
+  position: fixed;
+  margin: 0 auto;
+  }
+  .logo_list{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-top:30px ;
+  margin-left: 35px;
+  }
+  .logo{
+  position: static;
+  width: 130px;
+  height: 30px;
+  font-size: 30px;
+  font-family: Inter;
+  font-weight: 700;
+  line-height: 35px;
+  letter-spacing: 0%;
+  text-align: left;
+  text-transform: uppercase;
+  padding-left: 125px;
+  }
+  .logo span{
+  color: var(--color-blue);
+  }
+  .logo_p{
+  position: static;
+  width: 90px;
+  height: 20px;
+  padding-left:125px;
+  color: var(--color-black);
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 0%;
+  text-align: left;
+  }
+  .menu_bar .list{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  padding-top: 10px;
+  }
+  .list .list_item {
+  list-style-type: none;
+  padding: 30px 10px 10px 10px;
+  }
+  .menu_bar .list .list_item:nth-child(4) {
+    font-size: 1.3rem;
+    }
+    .menu_bar .list .list_item:nth-child(1) {
+      margin-left: 200px;
+      margin-right: -15px;
+    }
+    .menu_bar .list .list_item:nth-child(4) {
+      margin-left: 600px;
+      margin-right: -15px;
+    }
+    .menu_bar .list .list_item:nth-child(2) {
+      margin-right: -55px;
+    }
+    .menu_bar .list .list_item:nth-child(5) {
+      margin-right: -380px;
+      }
+  .menu_bar .list .bootsrap_buttons .btn{
+    font-family: Inter;
+    font-size: 17px;
+    font-weight: 450;
+    line-height: 20px;
+    letter-spacing: 0%;
+    text-decoration: none;
+    color: black;
+    margin-right: 100px;
+  }
+  .menu_bar .list .bootsrap_buttons .btn:nth-child(1){
+   margin-right: -20px !important;
+  }
+  .menu_bar .list .bootsrap_buttons .btn:hover{
+    font-family: Inter;
+  font-size: 17px;
+  font-weight: 450;
+  line-height: 20px;
+  letter-spacing: 0%;
+  color:#6268E8;
+  text-decoration: underline;
+  }
+  
+  .list .list_item .home {
+    font-size: 17px;
+    font-family: Inter;
+    font-weight: 450;
+    line-height: 20px;
+    letter-spacing: 0%;
+    text-decoration: none;
+    color: black;
+    transition: all .3s;
+  }
+  .list .list_item .home:hover{
+    font-family: Inter;
+    font-size: 17px;
+    font-weight: 450;
+    line-height: 20px;
+    letter-spacing: 0%;
+    text-decoration: none;
+    color:#6268E8;
+  }
+  .drop-down .btn{
+    display: flex;
+    align-items: center;
+    font-family: Inter;
+    width: 120px;
+    border: none;
+    font-size: 17px;
+    font-weight: 450;
+    line-height: 20px;
+    letter-spacing: 0%;
+    text-decoration: none;
+    color: black;
+  }
+  .drop-down .btn i.bi-caret-down{
+    margin-left: 2px;
+    margin-top: 5px;
+  }
+  .drop-down .dropdown-menu{
+  width: 120px;
+  height: 100px; 
+  overflow: hidden;
+  }
+  .drop-down .dropdown-menu .menu_item{
+  display: flex;
+  justify-content:center;
+  align-items:center ;
+  text-align: center ;
+  width: 160px;
+  height: 28px;
+  overflow: hidden;
+  border-radius: 8px;
+  }
+  .drop-down .dropdown-menu .menu_item:hover{
+    background:#F2F2F2;
+    overflow: hidden;
+    }
+  .drop-down .dropdown-menu .menu_item a{
+     display: flex;
+     align-items: flex-start;
+     justify-content: center;
+     font-size: 16px;
+     font-weight: 450;
+     margin-right: 60px;
+     font-family: Inter;
+     color: black;
+    }
+  .drop-down .dropdown-menu .menu_item:hover a{
+    background-color:transparent;
+    color:black;
+   }
+  .drop-down .header_btn{
+    position: relative;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 12px;
+    border-radius: 50px;
+    background: rgb(98, 104, 232);
+    border: none;
+    margin-right: 150px;
+    margin-top: 10px;
+  }
+  .drop-down .header_btn i{
+    font-size: 1.3rem;
+    color: #fff;
+    }
+    .drop-down .menu_profile{
+      width: 240px;
+      height: 220px; 
+      overflow: hidden;
+  
+      }
+      .drop-down .dropdown-menu .profile_menu{
+      display: flex;
+      justify-content:flex-start;
+      align-items:flex-start ;
+      text-align:left ;
+      width: 240px;
+      height: 34px;
+      overflow: hidden;
+      }
+      .drop-down .menu_profile .profile_menu .profile_item{
+        font-family:Inter;
+         display: flex;
+         align-items: flex-start;
+         justify-content: flex-start;
+         font-size: 16px;
+         font-weight: 450;
+         color: black;
+        }
+        .drop-down .menu_profile .profile_menu .profile_item i{
+          color: rgb(158, 165, 182);
+          font-size: 1.4rem;
+          font-weight: 500;
+          padding-right: 10px;
+          padding-bottom: 10px;
+          }
+          .drop-down .menu_profile .profile_menu .profile_item i.red{
+            color: red;
+            }
+    
+  /* ------- --- Requests to  Mentor section--- - -------- */
+  .requests_to_mentor{
+    max-width: 1920px;
+    height: 500px;
+    padding-top: 170px;
+    padding-left: 160px;
+    padding-right: 150px;
+    padding-bottom: 600px;
+    margin: 0 auto;
+  }
+  .requests_to_mentor_title{
+    width: 450px;
+    height: 50px;
+    color: rgb(42, 50, 67);
+    font-family: Balsamiq Sans;
+    font-size: 40px;
+    font-weight: 400;
+    margin-bottom: 20px;
+  }
+  #task-area{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+  }
+  #single-task{
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 500;
+  }
+  .tast_area_btn{
+    width: 216px;
+    height: 48px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 18px 12px 18px;
+    border-radius: 12px;
+    background: rgb(98, 104, 232);
+    color: rgb(255, 255, 255);
+    font-family: Inter;
+    font-size: 17px;
+    font-weight: 600;
+    text-align: left;
+    margin-left: 50px;
+    border: none;
+  }
+  #tasks{
+    width: 1200px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+     height: 363px;
+     box-sizing: border-box;
+     border: 1px solid rgb(204, 210, 225);
+     border-radius: 12px;
+     background: rgb(249, 251, 255);
+     margin-top: 30px;
+     overflow: hidden;
+     width: 100%;
+     padding-right: 30px;
+     overflow: auto;
+  }
+  #tasks .task{
+    width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 45px;
+    border-bottom: 1px solid rgb(204, 210, 225);
+    width: 100%;
+    padding-right: 30px;
+  }
+  .task .task_road{
+    position: relative;
+    width: 32px;
+    height: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid rgb(0, 152, 199);
+    border-radius: 8px;
+    color: rgb(0, 152, 199);
+  }
+  .task .task_road_btn{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .task_sarlavha_head{
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex:.7;
+    color: rgb(106, 113, 129);
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 130%;
+    letter-spacing: 0%;
+    text-align: left;
+  }
+  .task_sarlavha{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex:.733;
+    color: rgb(106, 113, 129);
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 400;
+    text-align: left;
+  }
+  .task_road_sarlavha{
+    color: rgb(106, 113, 129);
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 130%;
+    letter-spacing: 0%;
+    text-align: left;
+  }
+  .task_sarlavha span{
+    position: relative;
+    width: 100px;
+    height: 34px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    background: rgba(35, 184, 121, 0.1);
+    padding: 10px;
+    color: rgb(11, 150, 92);
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: 500;
+    text-align: left;
+  }
+  .task .delete{
+    font-size: 27px;
+    color: red;
+    cursor: pointer;
+    margin-right: 15px;
+  }
+
+  /* Begin_regis --------------------------------------*/
+  .Begin_regis{
+    z-index: 100;
+    position: relative;
+    max-width: 1026px;
+    height: 310px;
+    display: flex;
+    flex-direction:row;
+    justify-content: space-between;
+    align-items: center;
+    margin:0 auto;
+    box-sizing: border-box;
+    border: 1px solid rgb(209, 201, 229);
+    border-radius: 24px;
+    background: rgb(255, 255, 255);
+    margin: 0 auto;
+    margin-bottom: -150px;
+  }
+  .Begin_regis .Begin_regis_content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: 30px;
+  }
+  .Begin_regis .Begin_regis_content h2{
+     position: relative;
+     width: 565px;
+     height: 40px;
+     color: rgb(0, 0, 0);
+     font-family: Balsamiq Sans;
+     font-size: 40px;
+     font-weight: 400;
+     text-align: left;
+     margin-bottom: 20px;
+     margin-left: 20px;
+  }
+  .Begin_regis .Begin_regis_content h2 span{
+    color: rgb(98, 104, 232);
+  }
+  .Begin_regis .Begin_regis_content p{
+    position: relative;
+    width: 428px;
+    height: 50px;
+    color: rgb(106, 113, 129);
+    font-family: Inter;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 140%;
+    letter-spacing: 0%;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  .Begin_regis .Begin_regis_content button{
+    position: relative;
+    width: 207px;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 24px 12px 24px;
+    border-radius: 12px;
+    background: rgb(98, 104, 232);
+    border: none;
+    color: rgb(255, 255, 255);
+    font-family: Inter;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 140%;
+    letter-spacing: 0%;
+    text-align: left;
+  }
+  .Begin_regis .Begin_regis_content button i{
+    position: relative;
+    width: 24px;
+    height: 24px;
+    margin: 0px 10px;
+    font-size: 20px;
+    font-weight: 600;
+  }
+  .Begin_regis img{
+    position: relative;
+    width: 417px;
+    height: 310px;
+    margin-right: 50px;
+    margin-top: 20px;;
+  }
+  /* Footer_asoschi --------------------------------------*/
+  .Footer_asoschi{
+    max-width: 1920px;
+    height: 551px;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    background: rgb(48, 59, 80);
+    padding-top: 200px;
+    margin: 0 auto;
+   }
+   .Footer_asoschi .Asoschi_contact{
+     display: flex;
+     justify-content: flex-start;
+     align-items: flex-start;
+     flex-direction: column;
+     margin-left: 170px;
+     margin-right: 130px;
+   }
+   .Footer_asoschi .Asoschi_contact h3{
+     position: static;
+     width: 110px;
+     height: 29px;
+     color: rgb(255, 255, 255);
+     font-family: Inter;
+     font-size: 28px;
+     font-weight: 600;
+     line-height: 29px;
+     letter-spacing: 0%;
+     text-align: left;
+     text-transform: uppercase;
+   }
+   .Footer_asoschi .Asoschi_contact p{
+     width: 75px;
+     height: 17px;
+     color: rgb(255, 255, 255);
+     font-family: Inter;
+     font-size: 15px;
+     font-weight: 400;
+     line-height: 17px;
+     letter-spacing: 0%;
+     text-align: left;
+   }
+   .Footer_asoschi .Asoschi_contact .Asoschi_contact_tell{
+     position: relative;
+     width: 301px;
+     height: 244px;
+     display: flex;
+     flex-direction: column;
+     justify-content: flex-start;
+     align-items: flex-start;
+     padding: 12px;
+     box-sizing: border-box;
+     border: 1px solid rgb(98, 104, 232);
+     border-radius: 12px;
+   }
+   .Asoschi_contact_tell_list{
+     display: flex;
+     justify-content: flex-start;
+     align-items: flex-start;
+     flex-direction: column;
+     list-style-type: none;
+   }
+   .Asoschi_contact_tell_list .tell_list_item{
+     position: relative;
+     width: 291px;
+     height: 84px;
+     display: flex;
+     justify-content: flex-start;
+     align-items: flex-start;
+     flex-direction: row;
+   }
+   .Asoschi_contact_tell_list .tell_list_item i{
+     position: static;
+     width: 50px;
+     height: 50px;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     border-radius: 50px;
+     background: rgba(255, 255, 255, 0.1);
+     color: #fff;
+   }
+   .Asoschi_contact_tell_list li .tell_list_item_title{
+     width: 200px;
+     height: 40px;
+     display: flex;
+     justify-content: flex-start;
+     align-items: flex-start;
+     flex-direction: column;
+     margin-left: 30px;
+   }
+   .Asoschi_contact_tell_list li .tell_list_item_title h6{
+     position: static;
+     width: 104px;
+     height: 15px;
+     color: rgb(255, 255, 255);
+     font-family: Inter;
+     font-size: 13px;
+     font-weight: 400;
+     line-height: 15px;
+     letter-spacing: 0%;
+     text-align: left;
+   }
+   .Asoschi_contact_tell_list li .tell_list_item_title p{
+      position: static;
+      width: 146px;
+      height: 19px;
+      color: rgb(255, 255, 255);
+      font-family: Inter;
+      font-size: 15px;
+      font-weight: 400;
+      line-height: 15px;
+      letter-spacing: 0%;
+      text-align: left;
+   }
+   /****/
+   .Footer_asoschi_table{
+     width: 1000px;
+     height: 400px;
+   }
+   .Footer_asoschi_table .Footer_asoschi_table_list{
+     width: 1000px;
+     height: 400px;
+     display: flex;
+     list-style-type: none;
+   }
+   .Footer_asoschi_table .Footer_asoschi_table_list .item_list{
+     list-style-type: none;
+     width: 300px;
+     height: 400px;
+   }
+   .Footer_asoschi_table .Footer_asoschi_table_list .item_list li{
+    margin-bottom: 23.9px;
+   }
+   .Footer_asoschi_table .Footer_asoschi_table_list .item_list li h6{
+     position: static;
+     width: 195px;
+     height: 25px;
+     color: rgb(255, 255, 255);
+     font-family: Inter;
+     font-size: 20px;
+     font-weight: 500;
+     line-height: 22px;
+     letter-spacing: 0%;
+     text-align: left;
+   }
+   .Footer_asoschi_table .Footer_asoschi_table_list .item_list li a{
+     position: static;
+     width: 50px;
+     height: 21px;
+     text-decoration: none;
+     color: rgb(255, 255, 255);
+     font-family: Inter;
+     font-size: 17px;
+     font-weight: 300;
+     line-height: 19px;
+     letter-spacing: 0%;
+     text-align: left;   
+   }
+   /* Footer_produced -----------------*/
+   .Footer_produced{
+     position: relative;
+     max-width: 1920px;
+     height: 60px;
+     background: rgb(48, 59, 80);
+     border: 1px gray solid;
+     margin: 0 auto;
+   }
+   .Footer_produced .Footer_produced_content{
+     display: flex;
+     justify-content: space-between;
+     padding:20px 130px 20px 75px;
+   }
+   .Footer_produced .Footer_produced_content p{
+     position: relative;
+     width: 285px;
+     height: 20px;
+     font-family: Inter;
+     font-size: 14px;
+     font-weight: 400;
+     line-height: 17px;
+     letter-spacing: 0%;
+     text-align: right;
+     color: gray;
+   }
+   .Footer_produced .Footer_produced_content p span{
+     color: #fff;
+   }
+   .Footer_produced .Footer_produced_content .scial_list{
+     list-style-type: none;
+     display: flex;
+   }
+   .Footer_produced .Footer_produced_content .scial_list li{
+     margin-left: 20px;
+     margin-right: 20px;
+   }
+   .Footer_produced .Footer_produced_content .scial_list .scial_list_iconI {
+     position: relative;
+     width: 32px;
+     height: 32px;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     color: #fff;
+     border-radius: 17.5px;
+     background: rgb(255, 192, 227);
+   }
+   .Footer_produced .Footer_produced_content .scial_list .scial_list_iconY {
+     position: relative;
+     width: 32px;
+     height: 32px;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     color: #fff;
+     border-radius: 17.5px;
+     background: red;
+   }
+   .Footer_produced .Footer_produced_content .scial_list .scial_list_iconT {
+     position: relative;
+     width: 32px;
+     height: 32px;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     color: #fff;
+     border-radius: 17.5px;
+     background: rgb(0, 204, 255);
+     }
+   .Footer_produced .Footer_produced_content .scial_list .scial_list_iconF {
+     position: relative;
+     width: 32px;
+     height: 32px;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     color: #fff;
+     border-radius: 17.5px;
+     background: rgb(0, 140, 255);
+   }
